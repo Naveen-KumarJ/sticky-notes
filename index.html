@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="left-part">
+            <div class="logo-part">
+                <img src="./assets/note-sticky-regular.svg" alt="logo">
+                <h4>STNO</h4>
+            </div>
+            <div class="add-note-container">
+                <div class="add-note-part">
+                    <div class="add-note-header">
+                        <i class='bx bxs-file-plus' undefined ></i>
+                        <p>Add New Note</p>
+                    </div>
+                    <div class="add-note-context">
+                        <div class="colors-default">
+                            <div class="primary-color"></div>
+                            <div class="secondary-color"></div>
+                            <div class="third-color"></div>
+                        </div>
+                        <div class="custom-color">
+                            <input type="color" id="custom-color-value">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="right-part">
+            <div class="header-part">
+                <h1>MY NOTES</h1>
+                <div class="search-tab">
+                    <input type="text" placeholder="Search">
+                    <i class='bx bx-search'></i>
+                </div>
+                <div class="user-tab">
+                    <h4>Naveen Kumar J</h4>
+                    <img src="./assets/image.png" alt="">
+                </div>
+            </div>
+            <div class="main-part"></div>
+        </section>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

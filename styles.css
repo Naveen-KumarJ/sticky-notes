@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Roboto", serif;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.left-part{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+}
+.right-part{
+    flex: 5;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+}
+.left-part .logo-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    padding: 30px 20px;
+}
+/* .add-note-container{background-color: fuchsia;} */
+.main-part{background-color: darkgoldenrod;}
+.left-part .logo-part img{
+    width: 24px;
+    height: auto;
+}
+.left-part .logo-part h4{
+    letter-spacing: 3px;
+}
+
+.header-part{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+.header-part h1{
+    font-size: 34px;
+    flex: 1;
+}
+.user-tab{
+    /* background-color: red; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.user-tab h4{
+    font-size: 12px;
+}
+.user-tab img{
+    width: 28px;
+    height: auto;
+}
+.search-tab{
+    flex: 1;
+    /* width: 20%; */
+    height: 34px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.search-tab input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #F6F8FA;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+.search-tab input::placeholder{
+    color: #999999;
+}
+.search-tab i{
+    position: absolute;
+    left: 5px;
+    font-size: 24px;
+    color: #999999;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.add-note-container{
+    display: flex;
+    justify-content: center;
+}
+.add-note-part{
+    display: flex;
+    flex-direction: column;
+}
+.add-note-part .add-note-header{
+    display: flex;
+    align-items: center;
+    /* background-color: aquamarine; */
+    gap: 8px;
+}
+.add-note-header i{
+    font-size: 24px;
+}
+.add-note-header p{
+    font-size: 12px;
+    font-weight: 600;
+}
+.add-note-context{
+    display: flex;
+    flex-direction: column;
+}
+.colors-default{
+    /* background-color: darkgoldenrod; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding:10px 0 10px 40px;
+}
+.colors-default div{
+    width: 24px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.primary-color{background-color: #EFAAAB;}
+.secondary-color{background-color: #6CB5DF;}
+.third-color{background-color: #E9E582;}
+.custom-color{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.custom-color button{
+    padding: 10px 20px;
+    background-color: slateblue;
+    border: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px ;
+    cursor: pointer;
+}
+.main-part{
+    width: 100%;
+    height: 100%;
+    background-color: #F6F8FA;
+    border-radius: 40px 40px 0px 0px;
+    /* background-color: #6CB5DF; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    overflow-y: scroll;
+    padding: 40px 0px;
+}
+
+.each-note{
+    width: 248px;
+    height: 210px;
+    /* background-color: red; */
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+}
+.each-note textarea{
+    width: 100%;
+    height: 80%;
+    resize: none;
+    padding: 20px 10px;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    background-color: transparent;
+    font-weight: 600;
+    /* background-color: red; */
+}
+.each-note textarea::placeholder{
+    color: #000;
+}
+.each-note i{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
