@@ -14,4 +14,4 @@ Sticky Notes is a simple and interactive web application designed to help users 
 - **JavaScript:** For dynamic functionality and interactivity.
 
 ## Demo
-Check out the live demo here: [Sticky Notes App Demo](https://<your-demo-link>)
+Check out the live demo here: [Sticky Notes App Demo](https://naveen-kumarj.github.io/sticky-notes/)
